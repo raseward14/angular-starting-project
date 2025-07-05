@@ -14,11 +14,11 @@ import { identifierName } from '@angular/compiler';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  users = DUMMY_USERS;
+  users = DUMMY_USERS.slice(1, 2);
   selectedUserId = "u1";
 
   get selectedUser() {
-    return this.users.find(user => user.id === this.selectedUserId)!;
+    return this.users.find(user => user.id === this.selectedUserId);
   }
 
   onSelectUser(id: string) {
