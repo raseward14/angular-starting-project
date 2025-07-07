@@ -20,7 +20,6 @@ export class UserComponent {
   }
 
   onSelectUser() {
-    // we need to output the information from this click
     this.select.emit(this.user.id)
   };
 }
