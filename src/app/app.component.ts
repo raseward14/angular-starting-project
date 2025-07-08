@@ -4,7 +4,6 @@ import { HeaderComponent } from './header/header.component';
 import { UserComponent } from "./user/user.component";
 import { TasksComponent } from './tasks/tasks.component';
 import { DUMMY_USERS } from './dummy-users';
-import { identifierName } from '@angular/compiler';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +13,7 @@ import { identifierName } from '@angular/compiler';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  users = DUMMY_USERS.slice(1, 2);
+  users = DUMMY_USERS;
   selectedUserId = "u1";
 
   get selectedUser() {
