@@ -1,12 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-type Task = {
-  id: string,
-  userId: string,
-  title: string,
-  summary: string,
-  dueDate: string,
-}
+import { type Task } from './task.types';
 
 @Component({
   selector: 'app-task',
