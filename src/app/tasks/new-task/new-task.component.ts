@@ -1,6 +1,6 @@
 import { Component, Output, Input, EventEmitter, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { type NewTaskData } from '../task/task.types';
+
 import { TasksService } from '../tasks.service';
 
 @Component({
@@ -18,7 +18,7 @@ export class NewTaskComponent {
   enteredDate = '';
   private tasksService = inject(TasksService);
 
-  onCancel() {
+  onClose() {
     this.close.emit();
   }
 
