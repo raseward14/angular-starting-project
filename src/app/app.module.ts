@@ -8,11 +8,11 @@ import { UserComponent } from './user/user.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { TaskComponent } from './tasks/task/task.component';
 import { NewTaskComponent } from './tasks/new-task/new-task.component';
-import { CardComponent } from './ui/card/card.component';
+import { SharedModule } from './ui/shared.module';
 
 @NgModule({
-    declarations: [AppComponent, HeaderComponent, TasksComponent, TaskComponent, NewTaskComponent, CardComponent, UserComponent],
+    declarations: [AppComponent, HeaderComponent, TasksComponent, TaskComponent, NewTaskComponent, UserComponent],
     bootstrap: [AppComponent],
-    imports: [BrowserModule, FormsModule]
+    imports: [BrowserModule, FormsModule, SharedModule]
 })
 export class AppModule { }
