@@ -1,14 +1,11 @@
 import { Component, Input, inject } from '@angular/core';
-import { DatePipe } from '@angular/common';
 
 import { type Task } from './task.types';
-import { CardComponent } from "../../ui/card/card.component";
 import { TasksService } from '../tasks.service';
 
 @Component({
   selector: 'app-task',
-  standalone: true,
-  imports: [CardComponent, DatePipe],
+  standalone: false,
   templateUrl: './task.component.html',
   styleUrl: './task.component.css',
 })
